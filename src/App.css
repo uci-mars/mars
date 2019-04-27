@@ -1,33 +1,245 @@
-.App {
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
+
+/*.test {*/
+   /*border-style: dotted;*/
+ /*}*/
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media {
+  .container{
+    max-width: 1270px;
+  }
+}
+
+html, body {
+  height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+
+
+
+.profile_header{
+  height: 100vh;
+  overflow-x: hidden;
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #20232A;
+  overflow-y: hidden;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.info-card{
+  padding: 35px;
+  margin-right: 12px;
+  margin-left:12px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo {
+  width: 100px;
+  padding-bottom: 25px;
+  height: auto;
+  filter: gray;
+  /* IE6-9 */
+  -webkit-filter: grayscale(1);
+  /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1);
+  /* Microsoft Edge and Firefox 35+ */
+}
+
+.logo:hover {
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
+
+
+.logo-container {
+  text-align: center;
+}
+
+.info {
+  padding-top: 20 px;
+  background-color: #F5F5F5;
+  padding-bottom: 100px;
+}
+
+.profile {
+  position: absolute;
+  transform: translateY(-50%);
+  left: 10%;
+  right: 10%;
+  margin-top: 45vh;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  /*border-style: dotted;*/
+  background-color: #282C34;
+}
+
+.info-title {
+  text-align: center;
+  padding-bottom: 35px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+
+}
+
+.profile_text {
+  display: inline-block;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-top: 40px;
+  transform: translateY(2vw)
+}
+
+.course_list {
+  padding-left: 0px;
+  color: #777;
+  margin-left: 20px;
+}
+
+
+.profile_picture {
+  border-radius: 50%;
+  display: inline-block;
+  width: 300px;
+  vertical-align: center;
+  transform: translateY(-10%);
+}
+
+.right {
+  float: right;
+}
+
+.portfolio-button-container {
+  background-color: #777777;
+  height: 250px;
+}
+
+.portfolio-button {
+  transform: translateY(14vh);
+}
+
+.skill-title{
+  padding-bottom: 12px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.skill-badge {
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.skill-container {
+  margin-bottom: 30px;
+  text-align: center;
+
+}
+
+.social-logo {
+  margin-right: 5px;
+  margin-left: 5px;
+  color: #FFF;
+}
+
+.social-logo:hover{
+  margin-right: 5px;
+  margin-left: 5px;
+  color: #AAAAAA;
+}
+
+.footer{
+  padding-top: 40px;
+  padding-bottom: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  text-align: center;
+  background-color: #F9F9F9;
+}
+
+.portfolio-words{
+  font-size: 70px;
+}
+
+.project_row {
+
+  border: none;
+  padding: 16px 32px;
+  padding-top: 40px;
+  margin: 4px 4px 4px 0px;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.project_row img{
+  width: 100px;
+  height: auto;
+  filter: gray;
+  /* IE6-9 */
+  -webkit-filter: grayscale(1);
+  /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1);
+
+}
+
+.project_row:hover {
+  opacity: 1;
+}
+
+.project_row:hover img{
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
+
+.portfolio-container{
+  background-color: #F9F9F9;
+  text-align: center;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.project-container{
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 60vh;
+}
+
+.portfolio-tabs{
+  width: 45vw;
+  min-width: 400px;
+  text-align: center;
+  display: inline-block;
+  align-items: center;
+}
+
+.photography-gallery-container{
+  margin-top: 30px;
+  display: inline-block;
+  max-width: 85vw;
+  overflow-y: scroll;
+  max-height: 70vh;
 }
