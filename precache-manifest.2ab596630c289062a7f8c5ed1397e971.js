@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "9468e55b79d7f126c523",
+    "revision": "1364b5a51e2cd557aa1d",
     "url": "/mars/static/css/main.9595ff97.chunk.css"
   },
   {
-    "revision": "9468e55b79d7f126c523",
-    "url": "/mars/static/js/main.5ac9ee42.chunk.js"
+    "revision": "1364b5a51e2cd557aa1d",
+    "url": "/mars/static/js/main.29ab0c59.chunk.js"
   },
   {
     "revision": "523c3f796b86c94e8190",
@@ -48,7 +48,7 @@ self.__precacheManifest = [
     "url": "/mars/static/media/sosdogs.7e203cd3.PNG"
   },
   {
-    "revision": "2f0ba174099415e0a62a8d081d82a926",
+    "revision": "5274b08a3ce38a66ceea4d20ad5a2da6",
     "url": "/mars/index.html"
   }
 ];
