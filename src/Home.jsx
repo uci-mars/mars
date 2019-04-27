@@ -109,7 +109,7 @@ export default class Home extends Component{
                                     </Modal.Header>
                                     <Modal.Body> <Image src={resume} fluid /> </Modal.Body>
                                     <Modal.Footer>
-                                        <a href="./resume/MarawinChheang-resume.pdf" download="MarawinChheang-resume.pdf">
+                                        <a href="https://github.com/uci-mars/mars/raw/master/src/resume/MarawinChheang-resume.pdf" download="MarawinChheang-resume.pdf">
                                             <Button variant="info" onClick={this.handleClose}>
                                                 Download Resumé
                                             </Button>

@@ -1,7 +1,7 @@
 {
   "name": "mars",
   "version": "0.1.0",
-  "homepage": "https://github.com/uci-mars/mars",
+  "homepage": "https://uci-mars.github.io/mars/",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^3.9.3",
