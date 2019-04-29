@@ -4,85 +4,67 @@ import Lightbox from 'react-images';
 
 const photos = [
     {
-        src: "https://i.imgur.com/r7nyPnE.jpg",
+        src: "https://i.imgur.com/XjJGld9.jpg",
         width: 3,
         height: 4
     },
     {
-        src: "https://i.imgur.com/5YgYGfJ.jpg",
-        width: 3,
-        height: 4
-    },
-    {
-        src: "https://i.imgur.com/txCJIRX.jpg",
-        width: 3,
-        height: 4
-    },
-    {
-        src: "https://i.imgur.com/OCY23jJ.jpg",
-        width: 3,
-        height: 4
-    },
-    {
-        src: "https://i.imgur.com/JM12wjh.jpg",
-        width: 4,
-        height: 3
-    },
-    {
-        src: "https://i.imgur.com/kn3VNx5.jpg",
-        width: 3,
-        height: 4
-    },
-    {
-        src: "https://i.imgur.com/9InkUpA.jpg",
-        width: 3,
-        height: 4
-    },
-    {
-        src: "https://i.imgur.com/z8XGO3v.jpg",
-        width: 3,
-        height: 4
-    },
-    {
-        src: "https://i.imgur.com/4b6K4hC.jpg",
-        width: 3,
-        height: 4
-    },
-    {
-        src: "https://i.imgur.com/9ga05Qb.jpg",
-        width: 3,
-        height: 4
-    },
-    {
-        src: "https://i.imgur.com/hdP3tWF.jpg",
-        width: 2,
-        height: 1
-    },
-    {
-        src: "https://i.imgur.com/64uYi3a.jpg",
-        width: 3,
-        height: 4
-    },
-    {
-        src: "https://i.imgur.com/CvRROfj.jpg",
+        src: "https://i.imgur.com/hZmHopo.png",
         width: 1,
         height: 1
     },
     {
-        src: "https://i.imgur.com/TJ0Sg4h.jpg",
+        src: "https://i.imgur.com/aV4nM3B.jpg",
         width: 3,
         height: 4
     },
     {
-        src: "https://i.imgur.com/6hxaKas.jpg",
+        src: "https://i.imgur.com/POU4jv1.jpg",
+        width: 3,
+        height: 4
+    },
+    {
+        src: "https://i.imgur.com/qP4BmdC.jpg",
+        width: 3,
+        height: 1
+    },
+    {
+        src: "https://i.imgur.com/h2vett9.jpg",
+        width: 3,
+        height: 4
+    },
+    {
+        src: "https://i.imgur.com/fpj52yn.jpg",
+        width: 3,
+        height: 4
+    },
+    {
+        src: "https://i.imgur.com/FvrLwMT.jpg",
+        width: 3,
+        height: 4
+    },
+
+    {
+        src: "https://i.imgur.com/vn17zcx.jpg",
         width: 4,
         height: 3
     },
     {
-        src: "https://i.imgur.com/yLRdos5.jpg",
-        width: 3,
-        height: 4
-    }
+        src: "https://i.imgur.com/y0cWmYf.png",
+        width: 1,
+        height: 1
+    },
+    {
+        src: "https://i.imgur.com/3Ssh2I5.png",
+        width: 1,
+        height: 1
+    },
+    {
+        src: "https://i.imgur.com/4mF5bwB.jpg",
+        width: 1,
+        height: 1
+    },
+
 ];
 
 class PortfolioGallery extends Component{

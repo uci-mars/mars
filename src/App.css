@@ -67,18 +67,17 @@ html, body {
   /* Microsoft Edge and Firefox 35+ */
 }
 
-.logo:hover {
+.info-hover:hover .logo{
   -webkit-filter: grayscale(0);
   filter: none;
 }
-
 
 .logo-container {
   text-align: center;
 }
 
 .info {
-  padding-top: 20 px;
+  padding-top: 20px;
   background-color: #F5F5F5;
   padding-bottom: 100px;
 }
@@ -148,7 +147,7 @@ html, body {
 }
 
 .skill-badge {
-  margin-right: 10px;
+  margin-right: 5px;
   margin-bottom: 5px;
 }
 
@@ -185,7 +184,6 @@ html, body {
 }
 
 .project_row {
-
   border: none;
   padding: 16px 32px;
   padding-top: 40px;
@@ -202,12 +200,12 @@ html, body {
   -webkit-filter: grayscale(1);
   /* Google Chrome, Safari 6+ & Opera 15+ */
   filter: grayscale(1);
-
 }
 
 .project_row:hover {
   opacity: 1;
 }
+
 
 .project_row:hover img{
   -webkit-filter: grayscale(0);
@@ -229,7 +227,7 @@ html, body {
 }
 
 .portfolio-tabs{
-  width: 45vw;
+  width: 46vw;
   min-width: 400px;
   text-align: center;
   display: inline-block;
@@ -242,4 +240,28 @@ html, body {
   max-width: 85vw;
   overflow-y: scroll;
   max-height: 70vh;
+}
+
+.footer-link{
+  color: #000000;
+  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, yellow 50%);
+  background-position: -0% 0;
+  background-size: 200% auto;
+  line-height: 1.15em;
+  text-decoration: none;
+  transition: background-position 0.5s ease-out;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.footer-link:hover{
+  background-position: -99.99% 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.e-mail{
+  font-size: 14px;
+  letter-spacing: 3px;
+  font-weight: lighter;
 }

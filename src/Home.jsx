@@ -18,7 +18,7 @@ import resume from "./resume/resume.png"
 import Image from "react-bootstrap/Image"
 
 import { FaLinkedinIn } from "react-icons/fa"
-import { FaCode, FaInstagram, FaReact, FaPython, FaGithub, FaHtml5, FaJs, FaJava, FaCss3Alt } from "react-icons/fa"
+import { FaCode, FaAdobe, FaInstagram, FaReact, FaPython, FaGithub, FaHtml5, FaJs, FaJava, FaCss3Alt } from "react-icons/fa"
 import { DiAndroid, DiTerminal, DiGoogleCloudPlatform } from "react-icons/di"
 import PortfolioContainer from "./PortfolioContainer";
 
@@ -36,7 +36,7 @@ const particlesOptions = {
 };
 
 const skill_logo = {
-    'margin-left':'12px'
+    'marginLeft':'12px'
 };
 
 
@@ -48,6 +48,7 @@ export default class Home extends Component{
             show: false,
         };
         this.myDivToFocus = React.createRef()
+        this.myPortfolio = React.createRef()
         this.handleShow = this.handleShow.bind(this);
         this.handleClose = this.handleClose.bind(this);
     }
@@ -57,6 +58,16 @@ export default class Home extends Component{
         //.current is verification that your element has rendered
         if(this.myDivToFocus.current){
             this.myDivToFocus.current.scrollIntoView({
+                behavior: "smooth",
+                block: "nearest"
+            })
+        }
+    };
+
+    handleOnClickPortfolio = (event) => {
+        //.current is verification that your element has rendered
+        if(this.myPortfolio.current){
+            this.myPortfolio.current.scrollIntoView({
                 behavior: "smooth",
                 block: "nearest"
             })
@@ -84,8 +95,9 @@ export default class Home extends Component{
                                 <div className="profile_text test">
 
                                     <h1>Marawin Chheang</h1>
+                                    <p className="e-mail">CHHEANGM@UCI.EDU</p>
                                     <p>Software Engineer // Graphic Designer</p>
-                                    <div style={{'margin-down': '10px'}}>
+                                    <div style={{'marginDown': '10px'}}>
                                         <a href="https://github.com/uci-mars" className="social-link">
                                             <FaGithub className={'social-logo'}/>
                                         </a>
@@ -100,6 +112,7 @@ export default class Home extends Component{
                                     </div>
                                     <br/>
                                     <Button variant="info" onClick={this.handleShow}>View Resumé</Button>
+                                    <Button style={{"marginLeft": "10px"}} variant="outline-light" onClick={this.handleOnClickPortfolio}>View Portfolio</Button>
                                 </div>
 
                                 {/*##########################*/}
@@ -130,22 +143,23 @@ export default class Home extends Component{
 
 
 
-                <div className="info" ref={this.myDivToFocus}>
+                <div className="info"  ref={this.myDivToFocus}>
                 <Container>
-                    <Row>
+                    <Row style={{'marginBottom': '50px'}}>
                         <Col className="info-card test">
                             <h3 className="info-title ">Education</h3>
                             <Container>
-                            <Row>
+                            <Row className="info-hover">
                                 <Col className="logo-container" lg="auto">
                             <img className="logo" src={uci} alt="Logo"/>
                                 </Col>
 
                                 <Col lg>
-                            <b>University of California, Irvine</b>
-                            <p>Software Engineering, B.S.</p>
+                                        <b>University of California, Irvine</b>
+                                        <p>Software Engineering, B.S.</p>
 
-                                <p style={{'font-size': '12px'}}>Expected: July 2021</p>
+                                        <p style={{'fontSize': '12px'}}>Expected: July 2021</p>
+
 
                                 <p>Relevant Coursework:</p>
                                 <ul className='course_list'>
@@ -160,7 +174,7 @@ export default class Home extends Component{
                             </Col>
                             </Row>
 
-                                <Row style={{'padding-top': '40px'}}>
+                                <Row className="info-hover" style={{'paddingTop': '40px'}}>
                                     <Col className="logo-container" lg="auto">
                                         <img className="logo" src={nus} alt="Logo"/>
                                     </Col>
@@ -169,10 +183,10 @@ export default class Home extends Component{
 
                             <b>National University of Singapore</b>
                                 <p>UC Education Abroad Program</p>
-                                <p style={{'font-size': '12px'}}>Spring 2019</p>
+                                <p style={{'fontSize': '12px'}}>Spring 2019</p>
 
                                 <p>Relevant Coursework:</p>
-                                <ul className='course_list' style={{'padding-bottom': '50px'}}>
+                                <ul className='course_list' style={{'paddingBottom': '50px'}}>
                                     <li>Computer Organization</li>
                                     <li>Interaction Design</li>
                                     <li>User Interface Development</li>
@@ -182,7 +196,7 @@ export default class Home extends Component{
 
                                 <h3 className="info-title ">Achievement</h3>
 
-                                <Row style={{'padding-bottom': '50px'}}>
+                                <Row className="info-hover">
                                     <Col className="logo-container test" lg="auto">
                                         <img className="logo" src={nussteps} alt="Logo"/>
                                     </Col>
@@ -191,12 +205,12 @@ export default class Home extends Component{
                                         <b>NUS 14th STePS - SoC Term Project Showcase</b>
                                         <p>National University of Singapore</p>
 
-                                        <p style={{'font-size': '12px'}}>April 2019</p>
+                                        <p style={{'fontSize': '12px'}}>April 2019</p>
 
                                         <p>Awarded 2nd Place for Most Voted CS3240 Interaction Design project.</p>
                                     </Col>
-
                                 </Row>
+
                             </Container>
 
 
@@ -206,7 +220,7 @@ export default class Home extends Component{
                             <h3 className="info-title ">Work Experience</h3>
 
                             <Container>
-                                <Row>
+                                <Row className="info-hover">
                                     <Col className="logo-container test" lg="auto">
                                         <img className="logo" src={asml} alt="Logo"/>
                                     </Col>
@@ -215,9 +229,9 @@ export default class Home extends Component{
                                         <b>UCI Student Government & Student Media</b>
                                         <p>Graphic Designer and Marketing Intern</p>
 
-                                        <p style={{'font-size': '12px'}}>2017 - Present</p>
+                                        <p style={{'fontSize': '12px'}}>2017 - Present</p>
 
-                                        <p style={{'padding-bottom': '50px'}}>Experience designing graphic and leading marketing campaigns for UCI
+                                        <p style={{'paddingBottom': '50px'}}>Experience designing graphic and leading marketing campaigns for UCI
                                             Student Government and on-campus events.</p>
                                     </Col>
 
@@ -226,7 +240,7 @@ export default class Home extends Component{
 
                                 <h3 className="info-title">Activities + Leadership Experience</h3>
 
-                                <Row>
+                                <Row className="info-hover">
                                     <Col className="logo-container test" lg="auto">
                                         <img className="logo" src={wics} alt="Logo"/>
                                     </Col>
@@ -235,12 +249,12 @@ export default class Home extends Component{
                                         <b>Women in Information and Computer Science</b>
                                         <p>Mentor</p>
 
-                                        <p style={{'font-size': '12px'}}>2018 - Present</p>
+                                        <p style={{'fontSize': '12px'}}>2018 - Present</p>
 
                                     </Col>
                                 </Row>
 
-                                <Row style={{'padding-top': '40px'}}>
+                                <Row className="info-hover" style={{'paddingTop': '40px'}}>
                                     <Col className="logo-container" lg="auto">
                                         <img className="logo" src={uci_som} alt="Logo"/>
                                     </Col>
@@ -249,7 +263,7 @@ export default class Home extends Component{
                                         <b>UC Irvine, School of Medicine</b>
                                         <p>Pre-Medical Research Summer Internship</p>
 
-                                        <p style={{'font-size': '12px'}}>July 2016</p>
+                                        <p style={{'fontSize': '12px'}}>July 2016</p>
 
                                         <p>Awarded with a full scholarship to the Health & Science Enrichment Program at UCI.
                                             Involved in hands-on research labs and co-authored a literature review paper, <i>Efficacy of Antacids in Treating Gastroesophageal Reflux in Infants</i>.</p>
@@ -264,12 +278,12 @@ export default class Home extends Component{
 
 
 
-                    <Row className="test" style={{'margin-top': '20px'}}>
+                    <Row className="test" style={{'marginTop': '20px'}}>
                         <Col className="logo-container test"  lg="auto">
                             <h4 className="skill-title">Technical Skills</h4>
                         </Col>
                         <Col className={'test skill-container'} lg="auto">
-                            <Chip label="Adobe Creative Suite" className='skill-badge' variant="outlined" />
+                            <Chip icon={<FaAdobe style={skill_logo}/>} label="Adobe Creative Suite" className='skill-badge' variant="outlined" />
                             <Chip icon={<DiGoogleCloudPlatform style={skill_logo}/>} label="Google Cloud Platform" className='skill-badge' variant="outlined" />
                             <Chip icon={<DiTerminal style={skill_logo}/>} label="UNIX/Linux" className='skill-badge' variant="outlined" />
                             <Chip icon={<FaGithub style={skill_logo}/>} label="Git" className='skill-badge' variant="outlined" />
@@ -305,17 +319,18 @@ export default class Home extends Component{
                         </Col>
                     </Row>
                 </Container>
+
                 </div>
 
-                <div>
+                <div ref={this.myPortfolio}>
                    <PortfolioContainer/>
                 </div>
 
                 <div className={'footer'}>
-                    <p><b>E-mail&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;
-                        LinkedIn&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;
-                        GitHub&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;
-                        Instagram</b>
+                    <p><b><a href="mailto:chheangm@uci.edu" className="footer-link" title="chheangm@uci.edu">E-mail</a>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;
+                        <a href="https://www.linkedin.com/in/mchheang/" className="footer-link" title="@mchheang">LinkedIn</a>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;
+                        <a href="https://www.github.com/uci-mars/" className="footer-link" title="@uci-mars">GitHub</a>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;
+                        <a href="https://www.instagram.com/maralose/" className="footer-link" title="@maralose">Instagram</a></b>
                         <br/><br/>© 2019 Marawin Chheang</p>
                 </div>
 

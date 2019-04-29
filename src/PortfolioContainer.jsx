@@ -33,8 +33,8 @@ class PortfolioContainer extends Component {
                 >
 
                     <Tab label="Software Projects" />
-                    <Tab label="UI/UX Projects" />
-                    <Tab label="Graphic Designs" />
+                    <Tab label="Interaction Design" />
+                    <Tab label="Graphic Design" />
                     <Tab label="Photography" />
                 </Tabs>
 
