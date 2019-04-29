@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "073091ee0928d98b1aff",
-    "url": "/mars/static/css/main.690e9c85.chunk.css"
+    "revision": "e9939270ba79242db85c",
+    "url": "/mars/static/css/main.76192718.chunk.css"
   },
   {
-    "revision": "073091ee0928d98b1aff",
-    "url": "/mars/static/js/main.ceaeb976.chunk.js"
+    "revision": "e9939270ba79242db85c",
+    "url": "/mars/static/js/main.3e4ecd0a.chunk.js"
   },
   {
     "revision": "523c3f796b86c94e8190",
     "url": "/mars/static/js/runtime~main.37e168e0.js"
   },
   {
-    "revision": "9c7417c47670ec70ca55",
-    "url": "/mars/static/js/2.c993c6c9.chunk.js"
+    "revision": "b6f1e91cb98ca2b0a288",
+    "url": "/mars/static/js/2.6f286860.chunk.js"
   },
   {
     "revision": "a590f40c1b81b628b107a1b5cfbb69e2",
@@ -64,7 +64,11 @@ self.__precacheManifest = [
     "url": "/mars/static/media/releaf.145dc580.png"
   },
   {
-    "revision": "6a84a73826e592bb943a3834e55d69d3",
+    "revision": "9cfac72124264349d9e55067164725cc",
+    "url": "/mars/static/media/cs3249.9cfac721.png"
+  },
+  {
+    "revision": "1c9759115b824b2065fa062850971150",
     "url": "/mars/index.html"
   }
 ];
