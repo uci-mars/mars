@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "0a1933454aef262e468c",
-    "url": "/static/css/main.ef494189.chunk.css"
+    "revision": "751c216e368c75e5bca30b1b4df2a3bd",
+    "url": "/static/media/uci_som.751c216e.jpg"
   },
   {
-    "revision": "0a1933454aef262e468c",
-    "url": "/static/js/main.06d17f45.chunk.js"
+    "revision": "c8721b299faaa2915d4e",
+    "url": "/static/css/main.fef492de.chunk.css"
   },
   {
     "revision": "fdfcfda2d9b1bf31db52",
     "url": "/static/js/runtime~main.c5541365.js"
   },
   {
-    "revision": "b8b6134fd9b97d621328",
-    "url": "/static/js/2.c87cce5a.chunk.js"
+    "revision": "b6a8f8b524375dc1f2e1",
+    "url": "/static/js/2.becc61ef.chunk.js"
   },
   {
     "revision": "0da5186a5187bcb5e47a5b75572ab854",
@@ -36,8 +36,8 @@ self.__precacheManifest = [
     "url": "/static/media/wics.4b1fd715.png"
   },
   {
-    "revision": "751c216e368c75e5bca30b1b4df2a3bd",
-    "url": "/static/media/uci_som.751c216e.jpg"
+    "revision": "c8721b299faaa2915d4e",
+    "url": "/static/js/main.0086804f.chunk.js"
   },
   {
     "revision": "8c3b33ea308b7d2ecab81c57dbcb818b",
@@ -68,7 +68,7 @@ self.__precacheManifest = [
     "url": "/static/media/cs3249.9cfac721.png"
   },
   {
-    "revision": "546b31142797ac4498b4ab27c196fdfa",
+    "revision": "bd85e90e86590b4c35a62779c980cd7d",
     "url": "/index.html"
   }
 ];
