@@ -62,7 +62,7 @@ class PortfolioPage extends Component{
                                     <b>ReLeaf</b>
                                     <p style={{'fontSize': '12px'}}><b>HackNTU</b> - March 2019</p>
                                     <p>
-                                        ReLeaf is a mobile game that provide a platform to encourage people to get out
+                                        ReLeaf is a mobile game that provides a platform to encourage people to get out
                                         of their homes and pay more attention to the greenery around them. Our inspiration
                                         for this project came from Singapore's focus on green urbanism and its abundance of
                                         data on local trees. For this project, I planned the requirements and developed
@@ -92,7 +92,7 @@ class PortfolioPage extends Component{
                                     <p style={{'fontSize': '12px'}}><b>SDHacks</b> - October 2018</p>
                                     <p>
                                         Blink is a mobile application that allows its users to network easily by
-                                        seemlessly share 'digital business card' via NFC technology. Our inspiration for
+                                        seamlessly share 'digital business card' via NFC technology. Our inspiration for
                                         this project stems from the inconvenience of exchanging contact information with others
                                         at networking events. For this project, I developed the front-end of the Android application
                                         and implemented the NFC functionality.
@@ -147,7 +147,7 @@ class PortfolioPage extends Component{
                                     <p style={{'fontSize': '12px'}}><b>HackUCI</b> - Feburary 2018</p>
                                     <p>
                                         DEFCON is a web application that notifies subscribed users
-                                        in the event of any nearby disasters along with step by step guidance
+                                        in the event of any nearby disasters along with step by step guide
                                         for various scenarios, live social media updates, a map of the affected
                                         areas and nearby shelters, hospitals, or grocery stores. For this project,
                                         I designed the graphics and worked on the front-end of the application.

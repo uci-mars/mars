@@ -15,6 +15,7 @@ import wics from "./images/wics.png"
 import uci_som from "./images/uci_som.jpg"
 import nussteps from "./images/nussteps.png"
 import resume from "./resume/resume.png"
+import icssc from "./images/icssc.png"
 import Image from "react-bootstrap/Image"
 
 import { FaLinkedinIn } from "react-icons/fa"
@@ -242,6 +243,21 @@ export default class Home extends Component{
 
                                 <Row className="info-hover">
                                     <Col className="logo-container test" lg="auto">
+                                        <img className="logo" src={icssc} alt="Logo"/>
+                                    </Col>
+
+                                    <Col lg>
+                                        <b>Information and Computer Science Student Council</b>
+                                        <p>Project Chair</p>
+
+                                        <p style={{'fontSize': '12px'}}>2019 - Present</p>
+
+                                    </Col>
+
+                                </Row>
+
+                                <Row className="info-hover" style={{'paddingTop': '40px'}}>
+                                    <Col className="logo-container test" lg="auto">
                                         <img className="logo" src={wics} alt="Logo"/>
                                     </Col>
 
@@ -249,7 +265,7 @@ export default class Home extends Component{
                                         <b>Women in Information and Computer Science</b>
                                         <p>Mentor</p>
 
-                                        <p style={{'fontSize': '12px'}}>2018 - Present</p>
+                                        <p style={{'fontSize': '12px'}}>2018 - 2019</p>
 
                                     </Col>
                                 </Row>
@@ -316,6 +332,7 @@ export default class Home extends Component{
                             <Chip label="Human-Computer Interaction" className='skill-badge' variant="outlined" />
                             <Chip label="Bioinformatics" className='skill-badge' variant="outlined" />
                             <Chip label="Photography" className='skill-badge' variant="outlined" />
+                            <Chip label="Cooking" className='skill-badge' variant="outlined" />
                         </Col>
                     </Row>
                 </Container>
