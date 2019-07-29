@@ -16,6 +16,9 @@ import uci_som from "./images/uci_som.jpg"
 import nussteps from "./images/nussteps.png"
 import resume from "./resume/resume.png"
 import icssc from "./images/icssc.png"
+import daspedia from "./images/daspedia.png"
+import isatv from "./images/isatv.png"
+import oit from "./images/oit.png"
 import Image from "react-bootstrap/Image"
 
 import { FaLinkedinIn } from "react-icons/fa"
@@ -107,19 +110,19 @@ export default class Home extends Component{
                                             <FaLinkedinIn className={'social-logo'}/>
                                         </a>
 
-                                        <a href="https://instagram.com/maralose" className="social-link">
+                                        <a href="https://instagram.com/marsc.dev" className="social-link">
                                             <FaInstagram className={'social-logo'}/>
                                         </a>
                                     </div>
                                     <br/>
-                                    <Button variant="info" onClick={this.handleShow}>View Resumé</Button>
-                                    <Button style={{"marginLeft": "10px"}} variant="outline-light" onClick={this.handleOnClickPortfolio}>View Portfolio</Button>
+                                    <Button variant="info"  style={{"margin": "5px"}} onClick={this.handleShow}>View Resumé</Button>
+                                    <Button style={{"margin": "5px"}} variant="outline-light" onClick={this.handleOnClickPortfolio}>View Portfolio</Button>
                                 </div>
 
                                 {/*##########################*/}
                                 <Modal size="lg" centered show={this.state.show} onHide={this.handleClose}>
                                     <Modal.Header closeButton>
-                                        <Modal.Title>Resumé <i>(Updated Apr 2019)</i></Modal.Title>
+                                        <Modal.Title>Resumé <i>(Updated July 2019)</i></Modal.Title>
                                     </Modal.Header>
                                     <Modal.Body> <Image src={resume} fluid /> </Modal.Body>
                                     <Modal.Footer>
@@ -159,7 +162,7 @@ export default class Home extends Component{
                                         <b>University of California, Irvine</b>
                                         <p>Software Engineering, B.S.</p>
 
-                                        <p style={{'fontSize': '12px'}}>Expected: July 2021</p>
+                                        <p style={{'fontSize': '12px'}}>Anticipated: July 2021</p>
 
 
                                 <p>Relevant Coursework:</p>
@@ -195,50 +198,6 @@ export default class Home extends Component{
                                     </Col>
                                 </Row>
 
-                                <h3 className="info-title ">Achievement</h3>
-
-                                <Row className="info-hover">
-                                    <Col className="logo-container test" lg="auto">
-                                        <img className="logo" src={nussteps} alt="Logo"/>
-                                    </Col>
-
-                                    <Col className="test" lg>
-                                        <b>NUS 14th STePS - SoC Term Project Showcase</b>
-                                        <p>National University of Singapore</p>
-
-                                        <p style={{'fontSize': '12px'}}>April 2019</p>
-
-                                        <p>Awarded 2nd Place for Most Voted CS3240 Interaction Design project.</p>
-                                    </Col>
-                                </Row>
-
-                            </Container>
-
-
-
-                        </Col>
-                        <Col className="info-card test">
-                            <h3 className="info-title ">Work Experience</h3>
-
-                            <Container>
-                                <Row className="info-hover">
-                                    <Col className="logo-container test" lg="auto">
-                                        <img className="logo" src={asml} alt="Logo"/>
-                                    </Col>
-
-                                    <Col className="test" lg>
-                                        <b>UCI Student Government & Student Media</b>
-                                        <p>Graphic Designer and Marketing Intern</p>
-
-                                        <p style={{'fontSize': '12px'}}>2017 - Present</p>
-
-                                        <p style={{'paddingBottom': '50px'}}>Experience designing graphic and leading marketing campaigns for UCI
-                                            Student Government and on-campus events.</p>
-                                    </Col>
-
-                                </Row>
-                                {/*<h3 className="info-title">-</h3>*/}
-
                                 <h3 className="info-title">Activities + Leadership Experience</h3>
 
                                 <Row className="info-hover">
@@ -251,6 +210,9 @@ export default class Home extends Component{
                                         <p>Project Chair</p>
 
                                         <p style={{'fontSize': '12px'}}>2019 - Present</p>
+
+                                        <p>Runs a project committee which offers technical skills
+                                            building to ICS students by working on various software development projects.</p>
 
                                     </Col>
 
@@ -266,6 +228,8 @@ export default class Home extends Component{
                                         <p>Mentor</p>
 
                                         <p style={{'fontSize': '12px'}}>2018 - 2019</p>
+
+                                        <p>Participated in a mentorship program as a mentor to two underclassmen ICS students.</p>
 
                                     </Col>
                                 </Row>
@@ -285,6 +249,106 @@ export default class Home extends Component{
                                             Involved in hands-on research labs and co-authored a literature review paper, <i>Efficacy of Antacids in Treating Gastroesophageal Reflux in Infants</i>.</p>
                                     </Col>
                                 </Row>
+
+
+
+                            </Container>
+
+
+
+                        </Col>
+                        <Col className="info-card test">
+                            <h3 className="info-title ">Work Experience</h3>
+
+                            <Container>
+                                <Row className="info-hover">
+                                    <Col className="logo-container test" lg="auto">
+                                        <img className="logo" src={oit} alt="Logo"/>
+                                    </Col>
+
+                                    <Col className="test" lg>
+                                        <b>UCI Office of Information Technology</b>
+                                        <p>Front-End Developer</p>
+
+                                        <p style={{'fontSize': '12px'}}>2019 - Present</p>
+
+                                        <p>Developing, maintaining, testing, and documenting the user interface and
+                                        user experience of the IAM portfolio of services and upcoming web
+                                        application projects.</p>
+                                    </Col>
+
+                                </Row>
+
+                                <Row className="info-hover" style={{'paddingTop': '40px'}}>
+                                    <Col className="logo-container test" lg="auto">
+                                        <img className="logo" src={daspedia} alt="Logo"/>
+                                    </Col>
+
+                                    <Col className="test" lg>
+                                        <b>DASpedia</b>
+                                        <p>Graphic Designer/Web Developer</p>
+
+                                        <p style={{'fontSize': '12px'}}>2019 - Present</p>
+
+                                        <p>Designing marketing materials for large-scale telecommunication conferences and
+                                        developing company website.</p>
+                                    </Col>
+
+                                </Row>
+
+                                <Row className="info-hover" style={{'paddingTop': '40px'}}>
+                                    <Col className="logo-container test" lg="auto">
+                                        <img className="logo" src={isatv} alt="Logo"/>
+                                    </Col>
+
+                                    <Col className="test" lg>
+                                        <b>International Secret Agents</b>
+                                        <p>Design Intern</p>
+
+                                        <p style={{'fontSize': '12px'}}>Summer 2019</p>
+
+                                        <p>Experience in creative advertising content production for commercial brands
+                                        and working with Asian Pacific American influencers in live event production.</p>
+                                    </Col>
+
+                                </Row>
+
+                                <Row className="info-hover" style={{'paddingTop': '40px'}}>
+                                    <Col className="logo-container test" lg="auto">
+                                        <img className="logo" src={asml} alt="Logo"/>
+                                    </Col>
+
+                                    <Col className="test" lg>
+                                        <b>UCI Student Government & Student Media</b>
+                                        <p>Graphic Designer and Marketing Intern</p>
+
+                                        <p style={{'fontSize': '12px'}}>2017 - 2019</p>
+
+                                        <p style={{'paddingBottom': '50px'}}>Led marketing campaigns and designed graphics for UCI
+                                            Student Government and large-scale on-campus events.</p>
+                                    </Col>
+
+                                </Row>
+                                {/*<h3 className="info-title">-</h3>*/}
+
+                                <h3 className="info-title ">Achievement</h3>
+
+                                <Row className="info-hover">
+                                    <Col className="logo-container test" lg="auto">
+                                        <img className="logo" src={nussteps} alt="Logo"/>
+                                    </Col>
+
+                                    <Col className="test" lg>
+                                        <b>NUS 14th STePS - SoC Term Project Showcase</b>
+                                        <p>National University of Singapore</p>
+
+                                        <p style={{'fontSize': '12px'}}>April 2019</p>
+
+                                        <p>Awarded 2nd Place for Most Voted CS3240 Interaction Design project.</p>
+                                    </Col>
+                                </Row>  
+
+
 
                             </Container>
 
