@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "751c216e368c75e5bca30b1b4df2a3bd",
-    "url": "/static/media/uci_som.751c216e.jpg"
+    "revision": "d8c93d379c5e555d0f4731badc49bd9d",
+    "url": "/static/media/resume.d8c93d37.png"
   },
   {
-    "revision": "c8721b299faaa2915d4e",
-    "url": "/static/css/main.fef492de.chunk.css"
+    "revision": "c029de107123e314c389",
+    "url": "/static/css/main.01e5a514.chunk.css"
   },
   {
     "revision": "fdfcfda2d9b1bf31db52",
     "url": "/static/js/runtime~main.c5541365.js"
   },
   {
-    "revision": "b6a8f8b524375dc1f2e1",
-    "url": "/static/js/2.becc61ef.chunk.js"
+    "revision": "711b12cfda59592aae38",
+    "url": "/static/js/2.d2a5ae82.chunk.js"
   },
   {
     "revision": "0da5186a5187bcb5e47a5b75572ab854",
@@ -36,12 +36,24 @@ self.__precacheManifest = [
     "url": "/static/media/wics.4b1fd715.png"
   },
   {
-    "revision": "c8721b299faaa2915d4e",
-    "url": "/static/js/main.0086804f.chunk.js"
+    "revision": "751c216e368c75e5bca30b1b4df2a3bd",
+    "url": "/static/media/uci_som.751c216e.jpg"
   },
   {
-    "revision": "8c3b33ea308b7d2ecab81c57dbcb818b",
-    "url": "/static/media/resume.8c3b33ea.png"
+    "revision": "c029de107123e314c389",
+    "url": "/static/js/main.8c80f0e5.chunk.js"
+  },
+  {
+    "revision": "69da201692c342f89aecce623d6d13a9",
+    "url": "/static/media/daspedia.69da2016.png"
+  },
+  {
+    "revision": "bd7b5b50fd3dda6c43c37d50e2509524",
+    "url": "/static/media/isatv.bd7b5b50.png"
+  },
+  {
+    "revision": "646821fdf42658f063187fa4db299d42",
+    "url": "/static/media/oit.646821fd.png"
   },
   {
     "revision": "e8d2926f5979ee0c064a5e5e3144d14a",
@@ -68,7 +80,7 @@ self.__precacheManifest = [
     "url": "/static/media/cs3249.9cfac721.png"
   },
   {
-    "revision": "bd85e90e86590b4c35a62779c980cd7d",
+    "revision": "8174f5fecf8fbd26ab4dd9c2f83b3492",
     "url": "/index.html"
   }
 ];
