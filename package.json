@@ -19,6 +19,7 @@
     "react-scripts": "2.1.8"
   },
   "scripts": {
+    "postbuild": "purgecss --css build/static/css/*.css --content build/static/index.html build/static/js/*.js --out build/static/css",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -34,5 +35,9 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "glob-all": "^3.1.0",
+    "purgecss-webpack-plugin": "^1.6.0"
+  }
 }

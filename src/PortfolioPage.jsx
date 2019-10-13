@@ -27,7 +27,7 @@ class PortfolioPage extends Component{
                     {/*<h1>This is a page of CS Projects</h1>*/}
                     <Container className={'project-container'}>
                         <Col>
-                            <Row className={'project_row test'}>
+                            <Row className={'project_row'}>
                                 <Col className={'logo-container test'} lg="auto">
                                     <img src={cs3249} alt="Logo"/>
                                 </Col>
