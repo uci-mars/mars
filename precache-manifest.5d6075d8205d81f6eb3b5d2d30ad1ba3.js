@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/uci_som.751c216e.jpg"
   },
   {
-    "revision": "852900cd28238c559a41",
-    "url": "/static/css/main.0f1f0ac9.chunk.css"
+    "revision": "1fc09ad0781baff1fddf",
+    "url": "/static/css/main.38981ef8.chunk.css"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -40,8 +40,8 @@ self.__precacheManifest = [
     "url": "/static/media/wics.4b1fd715.png"
   },
   {
-    "revision": "852900cd28238c559a41",
-    "url": "/static/js/main.87a773b9.chunk.js"
+    "revision": "1fc09ad0781baff1fddf",
+    "url": "/static/js/main.6d8a360d.chunk.js"
   },
   {
     "revision": "69da201692c342f89aecce623d6d13a9",
@@ -80,7 +80,7 @@ self.__precacheManifest = [
     "url": "/static/media/cs3249.9cfac721.png"
   },
   {
-    "revision": "eda548a92c9ff2581b6f4a346d7b7e63",
+    "revision": "f424aea8718d18defcf57d741800e1a9",
     "url": "/index.html"
   }
 ];
