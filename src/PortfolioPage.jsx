@@ -27,6 +27,49 @@ class PortfolioPage extends Component{
                     {/*<h1>This is a page of CS Projects</h1>*/}
                     <Container className={'project-container'}>
                         <Col>
+
+                        <Row className={'project_row test'}>
+                                <Col className={'logo-container test'} lg="auto">
+                                    <img src={sosdogs} alt="Logo"/>
+                                </Col>
+                                <Col style={{"textAlign": "left"}} className={'test'}>
+                                    <b>SOSDogs</b>
+                                    <p style={{'fontSize': '12px'}}><b>NUS CS3240 Interaction Design</b> - April 2019</p>
+                                    <p>
+                                       A human-computer interaction project designed for NUS CS3240. Our design problem tackles
+                                        the issue of shelter overcrowding at animal shelters, specifically, Save Our Street Dogs (SOSD).
+                                        We followed the design process by conducting contextual inquiry, task and requirement analysis,
+                                        implementation, and user evaluation. For this project, I designed a high-fidelity prototype for the
+                                        application that will improve outreach and matchmaking between sheltered dog and potential adopter. SOSDogs
+                                        was awarded with 2nd prize for Most Voted CS3240 project at the 14th NUS School of Computing Term Project Showcase.
+                                    </p>
+                                    <a href={"https://www.youtube.com/watch?v=fZWI4A9ZoFo"}>
+                                        <Chip icon={<FaYoutube style={skill_logo}/>}
+                                              label="Watch our video"
+                                              clickable
+                                              className='skill-badge'
+                                              variant="default" />
+                                    </a>
+                                    <a href={"http://isteps.comp.nus.edu.sg/event/14th-steps/module/CS3240/project/9"}>
+                                        <Chip label="View on iSTePS"
+                                              clickable
+                                              className='skill-badge'
+                                              variant="default" />
+                                    </a>
+
+                                    <a href={"https://xd.adobe.com/view/6616def2-e730-45c9-78db-54d491b9df10-1027/"}>
+                                        <Chip label="Demo our prototype"
+                                              clickable
+                                              className='skill-badge'
+                                              variant="default" />
+                                    </a>
+
+
+                                    <Chip label="Adobe XD" className='skill-badge' variant="outlined" />
+
+                                </Col>
+                            </Row>
+
                             <Row className={'project_row'}>
                                 <Col className={'logo-container test'} lg="auto">
                                     <img src={cs3249} alt="Logo"/>
@@ -174,65 +217,11 @@ class PortfolioPage extends Component{
 
         else if (this.props.page === 1){
             return(
-                <div style={{"marginTop": "60px", "marginRight":"10px", "marginLeft":"10px"}}>
-                    <Container className={'project-container'}>
-                        <Col>
-                            <Row className={'project_row test'}>
-                                <Col className={'logo-container test'} lg="auto">
-                                    <img src={sosdogs} alt="Logo"/>
-                                </Col>
-                                <Col style={{"textAlign": "left"}} className={'test'}>
-                                    <b>SOSDogs</b>
-                                    <p style={{'fontSize': '12px'}}><b>NUS CS3240 Interaction Design</b> - April 2019</p>
-                                    <p>
-                                       A human-computer interaction project designed for NUS CS3240. Our design problem tackles
-                                        the issue of shelter overcrowding at animal shelters, specifically, Save Our Street Dogs (SOSD).
-                                        We followed the design process by conducting contextual inquiry, task and requirement analysis,
-                                        implementation, and user evaluation. For this project, I designed a high-fidelity prototype for the
-                                        application that will improve outreach and matchmaking between sheltered dog and potential adopter. SOSDogs
-                                        was awarded with 2nd prize for Most Voted CS3240 project at the 14th NUS School of Computing Term Project Showcase.
-                                    </p>
-                                    <a href={"https://www.youtube.com/watch?v=fZWI4A9ZoFo"}>
-                                        <Chip icon={<FaYoutube style={skill_logo}/>}
-                                              label="Watch our video"
-                                              clickable
-                                              className='skill-badge'
-                                              variant="default" />
-                                    </a>
-                                    <a href={"http://isteps.comp.nus.edu.sg/event/14th-steps/module/CS3240/project/9"}>
-                                        <Chip label="View on iSTePS"
-                                              clickable
-                                              className='skill-badge'
-                                              variant="default" />
-                                    </a>
-
-                                    <a href={"https://xd.adobe.com/view/6616def2-e730-45c9-78db-54d491b9df10-1027/"}>
-                                        <Chip label="Demo our prototype"
-                                              clickable
-                                              className='skill-badge'
-                                              variant="default" />
-                                    </a>
-
-
-                                    <Chip label="Adobe XD" className='skill-badge' variant="outlined" />
-
-                                </Col>
-                            </Row>
-
-
-                        </Col>
-                    </Container>
-                </div>
-            );
-        }
-
-        else if (this.props.page === 2){
-            return(
                 <GraphicGallery/>
             );
         }
 
-        else if (this.props.page === 3){
+        else if (this.props.page === 2){
             return(
                 <PortfolioGallery/>
             );

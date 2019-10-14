@@ -22,23 +22,23 @@ class PortfolioContainer extends Component {
             <div className={"portfolio-container"}>
                 <h3 className="info-title" style={{'paddingTop': '50px'}}>Portfolio</h3>
                 <Tabs
-                    className={'test portfolio-tabs'}
+                    className={'portfolio-tabs'}
                     value={this.state.value}
                     onChange={this.handleChange}
                     variant="scrollable"
                     scrollButtons="on"
                     indicatorColor="primary"
                     textColor="primary"
-                    centered
                 >
 
-                    <Tab label="Software Projects" />
-                    <Tab label="Interaction Design" />
+                    <Tab label="Projects" />
                     <Tab label="Graphic Design" />
                     <Tab label="Photography" />
                 </Tabs>
+                <div>
 
                 <PortfolioPage page={this.state.value}/>
+                </div>
             </div>
 
         )

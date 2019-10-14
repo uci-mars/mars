@@ -6,6 +6,7 @@ import Chip from "@material-ui/core/Chip";
 
 import Profile from "./Profile"
 
+import Tooltip from "@material-ui/core/Tooltip";
 
 import nus from "./images/nus.png";
 import uci from "./images/uci.png";
@@ -18,11 +19,11 @@ import daspedia from "./images/daspedia.png";
 import isatv from "./images/isatv.png";
 import oit from "./images/oit.png";
 
+import TextLoop from "react-text-loop";
 
 import {
   FaCode,
   FaAdobe,
-  FaInstagram,
   FaReact,
   FaPython,
   FaGithub,
@@ -30,6 +31,7 @@ import {
   FaJs,
   FaJava,
   FaCss3Alt,
+  FaInstagram,
   FaLinkedinIn
 } from "react-icons/fa";
 import { DiAndroid, DiTerminal, DiGoogleCloudPlatform } from "react-icons/di";
@@ -77,10 +79,11 @@ export default class Home extends Component {
     return (
       <Fragment>
 
+
         <Profile scrollDownButton={this.handleOnClick} portfolioButton={this.handleOnClickPortfolio}/>
       
 
-        <div className="info" ref={this.myDivToFocus}>
+        <div className="info" id="experience" ref={this.myDivToFocus}>
           <Container>
             <Row style={{ marginBottom: "50px" }}>
               <Col className="info-card">
@@ -88,7 +91,7 @@ export default class Home extends Component {
                 <Container>
                   <Row className="info-hover">
                     <Col className="logo-container" lg="auto">
-                      <img className="logo" src={uci} alt="Logo" />
+                      <img className="logo" src={uci} alt="UCI" />
                     </Col>
 
                     <Col lg>
@@ -112,7 +115,7 @@ export default class Home extends Component {
 
                   <Row className="info-hover" style={{ paddingTop: "40px" }}>
                     <Col className="logo-container" lg="auto">
-                      <img className="logo" src={nus} alt="Logo" />
+                      <img className="logo" src={nus} alt="NUS National University of Singapore" />
                     </Col>
                     <Col>
                       <b>National University of Singapore</b>
@@ -137,7 +140,7 @@ export default class Home extends Component {
 
                   <Row className="info-hover">
                     <Col className="logo-container " lg="auto">
-                      <img className="logo" src={icssc} alt="Logo" />
+                      <img className="logo" src={icssc} alt="ICSSC" />
                     </Col>
 
                     <Col lg>
@@ -156,7 +159,7 @@ export default class Home extends Component {
 
                   <Row className="info-hover" style={{ paddingTop: "40px" }}>
                     <Col className="logo-container " lg="auto">
-                      <img className="logo" src={wics} alt="Logo" />
+                      <img className="logo" src={wics} alt="WICS" />
                     </Col>
 
                     <Col lg>
@@ -174,7 +177,7 @@ export default class Home extends Component {
 
                   <Row className="info-hover" style={{ paddingTop: "40px" }}>
                     <Col className="logo-container" lg="auto">
-                      <img className="logo" src={uci_som} alt="Logo" />
+                      <img className="logo" src={uci_som} alt="UCI, School of Medicine" />
                     </Col>
 
                     <Col lg>
@@ -203,7 +206,7 @@ export default class Home extends Component {
                 <Container>
                   <Row className="info-hover">
                     <Col className="logo-container " lg="auto">
-                      <img className="logo" src={oit} alt="Logo" />
+                      <img className="logo" src={oit} alt="UCI OIT" />
                     </Col>
 
                     <Col className="" lg>
@@ -222,7 +225,7 @@ export default class Home extends Component {
 
                   <Row className="info-hover" style={{ paddingTop: "40px" }}>
                     <Col className="logo-container " lg="auto">
-                      <img className="logo" src={daspedia} alt="Logo" />
+                      <img className="logo" src={daspedia} alt="DASpedia" />
                     </Col>
 
                     <Col className="" lg>
@@ -241,7 +244,7 @@ export default class Home extends Component {
 
                   <Row className="info-hover" style={{ paddingTop: "40px" }}>
                     <Col className="logo-container " lg="auto">
-                      <img className="logo" src={isatv} alt="Logo" />
+                      <img className="logo" src={isatv} alt="ISAtv" />
                     </Col>
 
                     <Col className="" lg>
@@ -260,7 +263,7 @@ export default class Home extends Component {
 
                   <Row className="info-hover" style={{ paddingTop: "40px" }}>
                     <Col className="logo-container " lg="auto">
-                      <img className="logo" src={asml} alt="Logo" />
+                      <img className="logo" src={asml} alt="ASML" />
                     </Col>
 
                     <Col className="" lg>
@@ -281,7 +284,7 @@ export default class Home extends Component {
 
                   <Row className="info-hover">
                     <Col className="logo-container " lg="auto">
-                      <img className="logo" src={nussteps} alt="Logo" />
+                      <img className="logo" src={nussteps} alt="NUS STEPS" />
                     </Col>
 
                     <Col className="" lg>
@@ -428,49 +431,72 @@ export default class Home extends Component {
           </Container>
         </div>
 
-        <div ref={this.myPortfolio}>
+        <div id ="portfolio" ref={this.myPortfolio}>
           <PortfolioContainer />
         </div>
 
-        <div className={"footer"}>
-          <p>
-            <b>
-              <a
-                href="mailto:chheangm@uci.edu"
-                className="footer-link"
-                title="chheangm@uci.edu"
-              >
-                E-mail
-              </a>
-              &nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;
-              <a
-                href="https://www.linkedin.com/in/mchheang/"
-                className="footer-link"
-                title="@mchheang"
-              >
-                LinkedIn
-              </a>
-              &nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;
-              <a
-                href="https://www.github.com/uci-mars/"
-                className="footer-link"
-                title="@uci-mars"
-              >
-                GitHub
-              </a>
-              &nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;
-              <a
-                href="https://www.instagram.com/maralose/"
-                className="footer-link"
-                title="@maralose"
-              >
-                Instagram
-              </a>
-            </b>
-            <br />
-            <br />© 2019 Marawin Chheang
-          </p>
-        </div>
+        <footer className={"footer"}>
+        <div className="social-tablet" style={{display: "flex"}}>
+                        <div
+                          style={{
+                            display: "flex",
+                            flexDirection: "row",
+                            margin: "auto",
+                            lineHeight: "12px"
+                          }}
+                        >
+                          <Tooltip title="@uci-mars" placement="top">
+                            <a
+                              href="https://github.com/uci-mars"
+                              className="social-link social-link-github"
+                            >
+                              <FaGithub
+                                className={"social-logo social-logo-github"} style={{color: "#0a0a0a"}}
+                              />
+                            </a>
+                          </Tooltip>
+
+
+                          <Tooltip title="@mchheang" placement="top">
+                            <a
+                              href="https://www.linkedin.com/in/mchheang/"
+                              className="social-link social-link-linkedin"
+                            >
+                              <FaLinkedinIn
+                                className={"social-logo social-logo-linkedin"} style={{color: "#0a0a0a"}}
+                              />
+                            </a>
+                          </Tooltip>
+
+                          <Tooltip title="@marsc.dev" placement="top">
+                            <a
+                              href="https://instagram.com/marsc.dev"
+                              className="social-link social-link-instagram"
+                            >
+                              <FaInstagram
+                                className={"social-logo social-logo-instagram"} style={{color: "#0a0a0a"}}
+                              />
+                            </a>
+                          </Tooltip>
+                        </div>
+                        </div>
+           
+            <Row style={{maxWidth: "80%", margin: "auto"}}>
+              <Col style={{textAlign: "left"}}>
+                <p>Made with <span role="img" aria-label="love">❤️</span>in <TextLoop>
+                    <span><b>Singapore</b></span>
+                    <span><b>Irvine, CA</b></span>
+                    <span><b>Seattle, WA</b></span>
+                </TextLoop>
+                </p>
+              </Col>
+              <Col style={{textAlign: "right"}}>
+                © 2019 Marawin Chheang
+                </Col>
+              </Row>
+              
+
+        </footer>
       </Fragment>
     );
   }
