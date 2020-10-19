@@ -210,7 +210,7 @@ class Profile extends Component {
               >
                 <Modal.Header closeButton>
                   <Modal.Title>
-                    Resumé <i>(Updated July 2019)</i>
+                    Resumé <i>(Updated September 2020)</i>
                   </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
